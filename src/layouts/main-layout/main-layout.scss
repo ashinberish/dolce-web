@@ -1,0 +1,41 @@
+@import "@/theme/variables";
+
+nav {
+  background-color: $theme-color;
+  height: 100dvh;
+  width: $nav-md-width;
+  padding: 10px;
+  border-right: 2px solid $border-black;
+}
+.app-logo {
+  font-family: $primary-font;
+  font-size: 32px;
+  height: 100px;
+  padding: 25px 10px;
+}
+.nav-links a,
+.account-settings a {
+  padding: 12px;
+  display: inline-flex;
+  column-gap: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+  font-weight: 500;
+  border: 2px solid $theme-color;
+  cursor: pointer;
+  &:hover {
+    background-color: $light-theme-background;
+    border: 2px solid $border-black;
+  }
+  &.active {
+    background-color: $light-theme-background;
+    border: 2px solid $border-black;
+  }
+}
+main {
+  width: calc(100% - $nav-md-width);
+  margin-left: auto;
+  justify-content: center;
+}

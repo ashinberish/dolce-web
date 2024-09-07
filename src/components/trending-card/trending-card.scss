@@ -1,0 +1,30 @@
+@import "@/theme/variables";
+
+.trending-card {
+  top: 80px;
+  position: sticky;
+  margin: 80px 0px 0px 65px;
+  height: $trending-card-height;
+  background: $light-background;
+  border-radius: 10px;
+  border: 2px solid $theme-black;
+  padding: 20px;
+  h3 {
+    font-size: 24px;
+  }
+}
+.tags-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.tags {
+  font-size: 14px;
+  border: 2px solid $theme-black;
+  border-radius: 6px;
+  padding: 3px 6px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+}

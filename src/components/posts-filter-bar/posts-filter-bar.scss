@@ -1,0 +1,25 @@
+@import "@/theme/variables";
+
+.chips-container {
+  position: sticky;
+  top: 0;
+  background-color: $primary-background;
+  padding: 20px 0px;
+  display: flex;
+  column-gap: 10px;
+  height: 78px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  z-index: 4;
+}
+.chip {
+  background-color: $light-background;
+  font-family: $primary-font;
+  display: inline-block;
+  border: 2px solid $theme-black;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}

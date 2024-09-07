@@ -1,0 +1,40 @@
+// fonts
+$primary-font: "Nunito", sans-serif;
+$secondary-font: "Inter", sans-serif;
+
+// colors
+$theme-color: #ffc144ff;
+$theme-black: #272727ff;
+
+$light-yellow: #fddfa1;
+$grey-shadow: #d9d9d978;
+
+$primary-background: #faf3e5ff;
+$light-background: #ffffff;
+$muted-background: #b5b5b5ff;
+$light-theme-background: #fddfa1;
+
+$primary-text: $theme-black;
+
+$border-black: $primary-text;
+
+// sizing
+$nav-md-width: 240px;
+$posts-md-width: 620px;
+$posts-md-sidebar: 320px;
+
+$post-card-min-width: 320px;
+$post-card-height: 400px;
+$post-card-border-radius: 8px;
+$post-card-box-shadow: 1px 2.1px 2.1px $grey-shadow;
+$post-card-image-background: #262626;
+
+$trending-card-height: 400px;
+
+/*** Colors to be used ***/
+// --xanthous: #ffc144ff;
+// --raisin-black: #272727ff;
+// --kelly-green: #50b30eff;
+// --silver: #b5b5b5ff;
+// --old-lace: #faf3e5ff;
+// --vermilion: #fb3b3bff;

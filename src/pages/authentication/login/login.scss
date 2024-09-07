@@ -1,0 +1,27 @@
+@import "@/theme/variables";
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+.login-card {
+  width: 350px;
+  padding: 20px;
+  background-color: $light-background;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid $theme-black;
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  h4 {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,11 @@
+@import "@/theme/variables";
+
+.posts-container {
+  width: 100%;
+  max-width: $posts-md-width;
+}
+
+.posts-sidebar {
+  width: 100%;
+  max-width: $posts-md-sidebar;
+}

@@ -1,0 +1,93 @@
+@import "@/theme/variables";
+
+.post {
+  background-color: $light-background;
+  border: 2px solid $theme-black;
+  border-radius: $post-card-border-radius;
+  min-width: min($post-card-min-width, 100%);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.post-image {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.post-image-wrapper {
+  height: $post-card-height;
+  width: 100%;
+  background: $post-card-image-background;
+  flex-shrink: 0;
+  transition: transform 0.5s ease-in-out;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    user-select: none;
+  }
+}
+
+.post-recipe-desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.recipe-name {
+  font-size: 24px;
+}
+.author-name {
+  font-weight: 500;
+}
+.ratings {
+  display: flex;
+}
+.rating-count {
+  text-align: right;
+  font-weight: 500;
+}
+
+.prev-slide-btn {
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  svg {
+    color: #fff;
+    border-radius: 50%;
+  }
+}
+.next-slide-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(50%, -50%);
+  svg {
+    color: #fff;
+    border-radius: 50%;
+  }
+}
+
+.count-dots-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5px;
+  & .count-dot:not(:last-child) {
+    margin-right: 5px;
+  }
+  & .count-dot {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #fff;
+    opacity: 0.6;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    &.active {
+      opacity: 1;
+    }
+  }
+}
